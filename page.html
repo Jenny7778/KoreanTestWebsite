@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1{
+                font-family:sans-serif;
+                text-align: center;
+                font-size: 20px;
+            }
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: rgb(245, 219, 223);
+            }
+
+            .navbar {
+                overflow: hidden;
+                background-color: #333;
+                height: 20px;
+               
+            }
+
+            .navbar a {
+                float: left;
+                font-size: 10px;
+                color:white;
+                text-align: center;
+                padding: 5px 16px;
+                text-decoration: none;
+            }
+
+            .dropdown {
+                float: left;
+                overflow: hidden;
+            
+            }
+
+            .dropdown .dropbtn {
+                font-size: 10px;  
+                border: none;
+                outline: none;
+                color: white;
+                padding: 5px 10px;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0;
+            }
+
+            .navbar a:hover, .dropdown:hover .dropbtn {
+                background-color:teal;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 70px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            .dropdown-content a {
+                float: none;
+                color: black;
+                padding: 7px 12px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+                font-size: 7px;
+            }
+
+            .dropdown-content a:hover {
+                background-color: pink;
+                }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+               }
+
+
+     
+
+                  
+
+
+        </style>
+        <div>
+            <h1 id="title"> Korean Quiz <br>한국어 퀴즈</h1>
+        </div> 
+
+          
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="#Grammar">Grammar</a>
+            <a href="#Vocabulary">Vocabulary</a>
+            
+          
+            
+           
+            <div class="dropdown">
+              <button class="dropbtn">Korean Quiz
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">level 1</a>
+                <a href="#">lever 2</a>
+                <a href="#">level 3</a>
+                <a href="#">level 4</a>
+                <a href="#">level 5</a>
+                <a href="#">level 6</a>
+              </div>
+            </div>
+          </div>
+
+        
+    </head>
+</html>
