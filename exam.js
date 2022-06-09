@@ -76,6 +76,7 @@ function check() {
     for (q = 0; q < questions.length; q++) {
         let currQuestion = questions[q][0].parentElement.parentElement
         for (i = 0; i<4; i++) {
+            console.log(questions[q])
             if (questions[q][i].checked === true) {
                 // check if answer is correct
                 if (questions[q].value === answers[q]) {

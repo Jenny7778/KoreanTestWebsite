@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;0,900;1,100&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap'); */
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -11,29 +11,36 @@ body {
     z-index: 1;
   
 }  
-.wave {
+/* .wave {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
   
-}
+} */
 
 
 .navbar h1 {
-    padding-top: 30px;
+    padding-top: 10px;
     margin: 0;
-    font-size: 45px;
+    font-size: 1.7rem;
     float: left;
-    color:#fb2274;
+    /* color:#f92f7d; */
+    color:#000000a8;
+    font-weight: 900;
     line-height: 25px;
     font-family: 'Allura', cursive;
     word-spacing: 10px;
     letter-spacing: 3px;
-    
+    cursor: pointer;
+
+}
+.navbar a{
+    text-decoration: none;
+    font-weight: 600;
 }
 .navbar span{
-    font-size: 23px;
+    font-size: 1.2rem;
     
     
 }
@@ -76,7 +83,7 @@ nav a {
     text-transform: uppercase;
     font-weight: lighter;
     margin-left: 0;
-    font-size: 20px;
+    font-size:.8rem;
 
    
 }
@@ -97,21 +104,17 @@ nav ul li:hover::after{
 }
 
 .main{
-    background: linear-gradient(105deg, rgba(204, 214, 231, 0.9) 0%, rgba(145, 179, 233, 0.945) 100%), url(../images/ff.jpg) center no-repeat;
+    /* background: linear-gradient(105deg, rgba(204, 214, 231, 0.9) 0%, rgba(145, 179, 233, 0.945) 100%); */
+    background: linear-gradient(105deg, rgba(144, 179, 233, 0.945) 100%, rgba(36, 101, 212, 0.9) 0%);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 100vh;
     position: relative;
-    
-   
-    
- 
-   
 }
 
 .main h1{
     margin: 0;
-    color: black;
+    color: #fff;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -119,7 +122,11 @@ nav ul li:hover::after{
     font-size: 30px;
     font-weight: 600;
     opacity: 2;
-
+    text-align: center;
+}
+.main h1 span{
+    font-size: 2.5rem;
+    color: rgb(253, 253, 245);
 }
 /* .second {
     background-color: rgb(235, 234, 233);
@@ -274,14 +281,14 @@ span{
     right: 30px;
     top:20px;
     display: none;
+    font-size: 1.5rem;
+    color: #fff;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
   
     .navbar {
-      
-      
-        width: 100%;
+       width: 100%;
        flex-direction: column;
        align-items: center;
        margin: 0;
@@ -291,19 +298,11 @@ span{
     .wave {
         display: none;
     }
-    
-  
-
-
-   
-
-   
- 
+     
     .navbar h1 {
         font-size: 20px;
         position: relative;
-       left: 30px;
-       
+       left: 30px;   
     
     }
     .navbar ul {
@@ -311,44 +310,32 @@ span{
         background-color: #bea1ac;
         height: 60vh;
         width: 15em;
-        display: none;
-
-        
+        display: none;        
     } 
-    .navbar ul li{
-        
+    .navbar ul li{ 
         width: 100%;
         right: .01rem;
         top: 5em;
-        padding: 15px 12px;
-     
-        
-
+        padding: 15px 12px; 
     }
 
     nav ul li::after{
         display: none;
       }
    
-      .main h1 {
-          font-size: 1.5rem;
-          font-weight: bold;   
-          top: 40rem;  
-          width: 100%;
-          text-align: center;
-        }
+    .main h1 {
+        font-size: 1.5rem;
+        font-weight: bold;   
+        top: 40rem;  
+        width: 100%;
+        text-align: center;
+    }
       .navbar_toogleBtn{
         display: flex;
-    
-  
-      }
+    }
       .navbar_menu.active {
         display: block;
-      }
-
-
-
- 
+    }
     .row h1{
         font-size: 30px;
    
@@ -359,18 +346,10 @@ span{
     }
 
     .all-col-items img{
-     
         height: 8em;
-      
-       
     }
-    
-
-
     .layer h3{
-    
         font-size: 18px;
-
     }
     
 }
